@@ -427,7 +427,9 @@ def traceplot(results,
         particles. If an integer is passed, :data:`connect_highlight`
         random particle paths will be highlighted. If an iterable is passed,
         then the particle paths corresponding to the provided indices
-        will be highlighted.
+        will be highlighted. If thinning is applied (see the `thin` argument)
+        only those samples that have not been thinned out will be connected.
+        Default is `10`.
 
     connect_color : str, optional
         The color of the highlighted particle paths. Default is `'red'`.
